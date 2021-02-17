@@ -1,0 +1,58 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ nav{
+   display:  flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 8vh;
+  background-color: grey;
+ }
+li{
+  list-style: none;
+}
+.PS2logo{
+  color: #006FCD;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 22px
+}
+
+.Links{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.Links a{
+  color:#006FCD;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+.NAVBUTTON{
+  display: none;
+}
+
+.NAVBUTTON div{
+  width: 24px;
+  height: 4px;
+  background-color: #006FCD;
+  margin: 5px;
+}
+
+
+}
+@media (max-width: 800px)  {
+  .NAVBUTTON{
+    display: flex;
+  }
+  .Links{
+    display: none;
+  }
+}

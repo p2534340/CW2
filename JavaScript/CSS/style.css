@@ -6,3 +6,24 @@ body{
 img{
   width: 100px;
 }
+
+a{
+  display: block;
+}
+
+p{
+  font-size: 40px;
+}
+span{
+  font-size: 40px;
+}
+
+#GO{
+  position: fixed;
+  top: 0; left: 0;
+  font-size: 100px;
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
