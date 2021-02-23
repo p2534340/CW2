@@ -1,16 +1,6 @@
-const navSlide = () => {
-  const button = document.querySelector('.NAVBUTTON');
-  const nav = document.querySelector('.Links');
-  const navLinks = document.querySelectorAll('.Links li');
+ const toggleButton = document.getElementByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementByClassName('navbar-links')[0]
 
-    button.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-    });
-    navLinks.forEach((link, index) => {
-      link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 6}s';
-      console.log(index / 6);
-    });
-
-
-
-  navSlide();
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})

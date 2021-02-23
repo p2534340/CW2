@@ -1,88 +1,87 @@
 *{
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
 }
 
- nav{
-   display:  flex;
-   justify-content: space-around;
-   align-items: center;
-   min-height: 8vh;
-  background-color: #343434;
- }
-li{
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.brand-title{
+  font-size: 1.5rem;
+  margin:.7rem;
+  font-family: sans-serif;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
   list-style: none;
 }
-.PS2logo{
-  color: #006FCD;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 22px
-}
 
-.Links{
-  display: flex;
-  justify-content: space-around;
-  width: 45%;
-}
-
-.Links a{
-  color:#006FCD;
+.navbar-links li a{
   text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 16px;
-
+  color: white;
+  padding: 1rem;
+  display: block;
+  font-family: sans-serif;
 }
-.NAVBUTTON{
+
+.navbar-links li:hover{
+  background-color: #444;
+}
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
-.NAVBUTTON div{
-  width: 24px;
+.toggle-button .bar {
   height: 3px;
-  background-color: #006FCD;
-  margin: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 760px){
-  body{
-    overflow-x: hidden;
-  }
-  .Links{
-    position: absolute;
-    right: 0px;
-    height: 42vh;
-    top: 8vh;
-    background-color: #343434;
+@media (max-width: 600px){
+  .toggle-button{
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    width: 40%;
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in;
+    }
+  .navbar-links{
+  display: none;
+  width: 100%;
   }
-  .Links li{
-    opacity: 0;
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .NAVBUTTON{
-    display: block;
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
   }
-}
-
-.nav-active{
-  transform: translateX(0%);
-}
-
-@@keyframes navLinkFade {
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
+  .navbar-links li{
+    text-align: center;
   }
 
+  .navbar-links.active{
+    display: flex;
+  }
 }
