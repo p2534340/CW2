@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+     rel="stylesheet">
+    <title>PlayStation2</title>
+  </head>
+  <body>
+    <header>                              <!-- MENU -->
+      <section>
+        <nav id="menu" style="left: -100%;">      <!-- the menu was made to be hidden until the menu button got clicked-->
+            <a class="menuee" href="home.html">HOME</a>
+            <a class="menuee" href="store.html">STORE</a>
+            <a class="menuee" href="playstation2.html">PlayStation2</a>
+        </nav>
+
+        <div id="cover" style="left: -100%;">
+        </div>
+
+
+        <div id="menuButton">
+          <img id="button" src="images/MENUBUTTON.png" alt="Menu Button">
+        </div>
+
+        <a href="home.html">
+          <img id="ps2Logo" src="images/PS2LOGO.jpeg" alt="ps2logo">
+        </a>                        <!-- the menu button and the logo suited perfect -->
+    </section>
+    </header>
+
+
+  <!-- this was made to seperate the consoles and the games-->
+  <div id="top3">                                 <!--selection-->
+  <button class="topbuttonz active" onclick="filterSelection('both')">SHOW ALL</button>
+  <button class="topbuttonz" onclick="filterSelection('games')">GAMES</button>
+  <button class="topbuttonz" onclick="filterSelection('consoles')">CONSOLES</button>
+  </div>
+
+<h4 id="warning">SOME OF THE PRODUCTS MIGHT BE OUT OF STOCK, THE STORE IS GOING TO BE UPDATED
+  IN </h4>
+    <p id="countdown"></p>
+
+  <div class="stock">                                     <!-- PRODUCTS-->
+  <div class="group">                                         <!-- FIRST ROW-->
+    <div class="column">
+
+        <div class="filterDiv consoles">
+          <img class="product" src="images/shop/PS2CONSOLE.jpeg" alt="Sony PS2 Console (BLACK)">
+          <h1>Sony PS2 Console (BLACK)</h1>
+          <p class="cost">£65.89</p>
+
+          <p> <a id="buy" target="blank" href=https://www.amazon.co.uk/PlayStation-9202806-Sony-PS2-Console/dp/B00004WHER/ref=sr_1_1?brr=1&dchild=1&qid=1621164932&rd=1&s=videogames&sr=1-1>
+             PURCHASE</a></p>
+        </div>
+
+    </div>
+    <div class="column">
+
+        <div class="filterDiv consoles">
+          <img class="product" src="images/shop/PS2SLIM.jpg" alt="Sony PS2 Console Slim (BLACK)">
+          <h1>Sony PS2 Console Slim (BLACK)</h1>
+          <p class="cost">£110.00</p>
+          <p> <a id="buy" target="blank" href=https://www.onbuy.com/gb/sony-playstation-2-console-slim-black-new~c9547~p8754400/?condition=used&exta=gshp&stat=eyJpcCI6IjExMC4wMCIsImRwIjowLCJsaWQiOiIzNDQ1MTE4MCIsInMiOiIzIiwidCI6MTYyMDE5ODQzMCwiYm1jIjoiMS4wIn0=&lid=34451180&gclid=EAIaIQobChMIjJKOiJDO8AIVgxoGAB2L1AEIEAQYASABEgLkjvD_BwE&gclsrc=aw.ds>
+             PURCHASE</a></p>
+        </div>
+
+    </div>
+  </div>
+  <div class="group">
+    <div class="column">
+
+        <div class="filterDiv games">
+          <img class="product" src="images/shop/GTA.jpg" alt="Grand Theft Auto: San Andreas">
+          <h1>Grand Theft Auto: San Andreas</h1>
+          <p class="cost">£18.74</p>
+            <p> <a id="buy" target="blank" href=https://www.ebay.co.uk/itm/402661487418?chn=ps&mkevt=1&mkcid=28>
+              PURCHASE</a></p>
+        </div>
+
+    </div>
+    <div class="column">
+
+        <div class="filterDiv games">
+          <img class="product" src="images/shop/RESIDENTEVIL.jpg" alt="Resident Evil: 4">
+          <h1>Resident Evil: 4 </h1>
+          <p class="cost">£8.51</p>
+          <p> <a id="buy" target="blank" href=https://www.amazon.co.uk/Sony-Resident-Evil-4-PS2/dp/B0007A5FY4>
+             PURCHASE</a></p>
+        </div>
+
+    </div>
+  </div>
+  <div class="group">
+    <div class="column">
+
+        <div class="filterDiv games">
+          <img class="product" src="images/shop/GOW.jpeg" alt="God Of War: 2">
+          <h1>God Of War: 2</h1>
+          <p class="cost">£13.98</p>
+          <p> <a id="buy" target="blank" href=https://www.ebay.co.uk/itm/353471080652?chn=ps&norover=1&mkevt=1&mkrid=710-134428-41853-0&mkcid=2&itemid=353471080652&targetid=981234852680&device=c&mktype=pla&googleloc=1006867&poi=&campaignid=11211837113&mkgroupid=113021996634&rlsatarget=pla-981234852680&abcId=9300436&merchantid=6995734&gclid=EAIaIQobChMIx4LLipPO8AIV3AJ7Ch3JYgB8EAQYASABEgIE0PD_BwE>
+             PURCHASE</a></p>
+        </div>
+
+    </div>
+    <div class="column">
+
+        <div class="filterDiv games">
+          <img class="product" src="images/shop/BULLY.jpeg" alt="Bully">
+          <h1>Bully</h1>
+          <p class="cost">£12.95</p>
+          <p> <a id="buy" target="blank" href=https://www.onbuy.com/gb/canis-canem-edit-ps2~c9548~p2273482/?exta=gshp&stat=eyJpcCI6IjI1LjQxIiwiZHAiOjAsImxpZCI6IjM4NDIxNTIiLCJzIjoiMSIsInQiOjE2MjAxMjMxMjcsImJtYyI6IjIuNSJ9&lid=3842152>
+             PURCHASE</a></p>
+        </div>
+
+    </div>
+
+  </div>
+  <div class="group">
+    <div class="column">
+
+        <div class="filterDiv games">
+          <img class="product" src="images/shop/nfs.jpeg" alt="Need for Speed: Carbon">
+          <h1>Need for Speed: Carbon</h1>
+          <p class="cost">£2.71</p>
+        <p> <a id="buy" target="blank" href=https://www.amazon.co.uk/Need-for-Speed-Carbon-PS2/dp/B000HG3JL4>
+           PURCHASE</a></p>
+        </div>
+
+    </div>
+    <div class="group">
+      <div class="column">
+
+        <div class="filterDiv games">
+          <img class="product" src="images/shop/TEKKEN5.jpg" alt="TEKKEN 5">
+          <h1>Tekken 5</h1>
+          <p class="cost">£6.20</p>
+          <p> <a id="buy" target="blank" href=https://www.ebay.co.uk/itm/303997926445?chn=ps&mkevt=1&mkcid=28
+            >PURCHASE</a></p>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+
+  <div class="moreinfo">
+    <p>LINKS WITH MORE INFORMATION</p>
+    <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">
+      <img id="WIKIPEDIA" src="images/WIKIPEDIA.jpg" alt="WIKIPEDIA LOGO">
+    </a>
+    <a href="https://www.thefactsite.com/sony-playstation-2-facts/" target="_blank">
+      <img id="FACTSITE" src="images/FACTSITE.png" alt="FACTSITE LOGO">
+    </a>
+    <a href="https://gamerant.com/ps2-things-didnt-know-do//" target="_blank">
+      <img id="GAMERANT" src="images/GAMERANT.png" alt="GAMERANT LOGO">
+    </a>
+      <p id="pnumber">P2534340</p>
+  </div>
+
+</footer>
+
+<script>
+
+  openMenu = () => {
+  document.getElementById('menu').style.left = '0';
+  document.getElementById('cover').style.left = '0';
+  }
+
+  closeMenu = () => {
+  document.getElementById('menu').style.left = '-100%';
+  document.getElementById('cover').style.left = '-100%';
+  }
+
+  document.getElementById('menuButton').addEventListener('click', openMenu);
+  document.getElementById('cover').addEventListener('click', closeMenu);
+
+
+
+  filterSelection("both")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "both") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  var topbuttonzContainer = document.getElementById("top3");
+  var buttonz = topbuttonzContainer.getElementsByClassName("topbuttonz");
+  for (var i = 0; i < buttonz.length; i++) {
+    buttonz[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";z
+    });
+
+
+  }
+  // the date is set for when the count down will end
+  var countDownDate = new Date("AUGUST,2 2021 12:00:00").getTime();
+
+  // moves with every second
+  var x = setInterval(function() {
+
+  // (right now) time
+  var now = new Date().getTime();
+
+
+  var distance = countDownDate - now;
+
+  // calculations the time from days to seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = + days + " days  " + hours + " hours  "
+  + minutes + " min " + seconds + " sec ";
+
+  if (distance < 0) {
+  clearInterval(x);
+  document.getElementById("countdown").innerHTML = "SHOP UPDATED!";
+}                              //when timer runs out it will say "shop updated"
+  }, 1000);
+
+  </script>
+  </body>
+
+</html>
