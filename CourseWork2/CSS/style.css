@@ -7,6 +7,9 @@ body{
   margin: 0;
 }
 
+
+
+
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -18,7 +21,7 @@ body{
 .brand-title{
   font-size: 1.5rem;
   margin:.7rem;
-  font-family: sans-serif;
+  font-family: zirnic;
 }
 
 .navbar-links ul{
@@ -50,8 +53,8 @@ body{
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 32px;
+  height: 25px;
 }
 
 .toggle-button .bar {
@@ -59,7 +62,9 @@ body{
   width: 100%;
   background-color: white;
   border-radius: 10px;
+  display: inline-inline-block;
 }
+
 
 @media (max-width: 600px){
   .toggle-button{

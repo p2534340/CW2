@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+ rel="stylesheet">
+    <title>PlayStation2</title>
+  </head>
+  <body>
+    <header>                              <!-- MENU -->
+      <section>
+        <nav id="menu" style="left: -100%;">      <!-- -100% to the left so its hidden-->
+            <a class="menuee" href="home.html">HOME</a>
+            <a class="menuee" href="store.html">STORE</a>
+            <a class="menuee" href="playstation2.html">PlayStation2</a>
+        </nav>
+
+        <div id="cover" style="left: -100%;">
+        </div>
+
+
+        <div id="menuButton">
+          <img id="button" src="images/MENUBUTTON.png" alt="Menu Button">
+        </div>
+
+        <a href="home.html">
+          <img id="ps2Logo" src="images/PS2LOGO.jpeg" alt="ps2logo">
+        </a>
+    </section>
+    </header>
+  <!--COUNTDOWN-->
+    <div class="countdown">
+      <h2>UNTIL THE SHOP GETS UPDATED</h2>
+      <p id="countdown"></p>
+    </div>
+
+    <div>
+      <a class="bigbutton" href="store.html">BUY NOW</a>
+    </div>
+
+    <h4> THIS WEBSITE PROVIDES LINKS TO WHERE YOU CAN BUY CHEAP PS2 CONSOLES AND
+      GAMES</h4>
+
+    <div class="homeslide">
+              <!--These photos were edited on Adobe Photoshop to make sure theyre all the same size-->
+        <div class="slides">
+          <img src="images/PS2.png" alt="PlayStation console" style="width: 100%">
+        </div>
+        <div class="slides">
+          <img src="images/PS2GAMES.png" alt="PS2 GAMES" style="width: 100%">
+        </div>
+        <div class="slides">
+          <img src="images/PS2PLAYING.png" alt="PLAYING PS2" style="width: 100%">
+        </div>
+    </div>
+
+    <footer>
+                                            <!--SOCIAL MEDIA BUTTONS-->
+      <div class="moreinfo">
+        <p>LINKS WITH MORE INFORMATION</p>
+        <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">  <!-- makes the link open in new tab when -->
+          <img id="WIKIPEDIA" src="images/WIKIPEDIA.jpg" alt="WIKIPEDIA LOGO">
+        </a>
+        <a href="https://www.thefactsite.com/sony-playstation-2-facts/" target="_blank">
+          <img id="FACTSITE" src="images/FACTSITE.png" alt="FACTSITE LOGO">
+        </a>
+
+        <a href="https://gamerant.com/ps2-things-didnt-know-do//" target="_blank">
+          <img id="GAMERANT" src="images/GAMERANT.png" alt="GAMERANT LOGO">
+        </a>
+
+          <p id="pnumber">P2534340</p>
+      </div>
+
+    </footer>
+
+  <script>
+
+                                                      //MENU
+    openMenu = () => {
+    document.getElementById('menu').style.left = '0';
+    document.getElementById('cover').style.left = '0';
+    }
+
+    closeMenu = () => {
+    document.getElementById('menu').style.left = '-100%';
+    document.getElementById('cover').style.left = '-100%';
+    }
+
+    document.getElementById('menuButton').addEventListener('click', openMenu);
+    document.getElementById('cover').addEventListener('click', closeMenu);
+
+                                                      //SLIDESHOW
+    var slideIndex = 0;
+      showSlides();
+
+    function showSlides() {
+        var photo;
+        var slides = document.getElementsByClassName("slides");
+        for (photo = 0; photo < slides.length; photo++) {
+        slides[photo].style.display = "none";
+        }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000);   //changes every 5 seconds
+    }
+
+    // sets the date of the end of the countdown
+    var countDownDate = new Date("AUGUST,2 2021 12:00:00").getTime();
+
+    // updates every second
+    var x = setInterval(function() {
+
+    // gets today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = + days + " days  " + hours + " hours  "
+    + minutes + " min " + seconds + " sec ";
+
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "SHOP UPDATED!"; // information after the end (get rtid of ) of the countdown
+    }
+    }, 1000);
+
+  </script>
+
+  </body>
+</html>

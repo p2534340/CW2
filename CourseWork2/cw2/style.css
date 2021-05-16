@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#fff;
+
+  }
+
+footer {
+  margin-top: 50px;
+}
+
+
+#ps2Logo {
+  max-height: 75px;
+
+  }
+
+#paragraphs{
+  font-family: sans-serif;
+  font-size: 14px;
+  padding:0px 10px 0px 10px;
+}
+
+
+
+#button {
+  padding: 10px;
+  max-height: 75px;
+  float: right;
+  display: block;
+  }
+
+h4{
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 100%;
+
+}
+
+nav {
+
+    height: 100vh;      /*sets the height of the menu to be 100% of the viewports height */
+    position: fixed;    /* makes the menu stay in one position when scrolling */
+    background-color: black;
+    z-index: 10;
+    left: -100%;
+    width: 35vw;
+    transition: left 0.2s;
+    top: 0;
+}
+
+.cover{
+    height: 120vh;
+    z-index: 8;
+    left: -100%;
+    width: 120vw;
+    opacity: 0;
+    transition: left 0.2s;
+    position: fixed;
+    top: 0;
+  }
+
+section {
+  background-color: black;
+}
+
+h2 {
+  font-family: sans-serif;
+
+  color: black;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 185%;
+}
+
+video{
+  max-width: 100%;
+  padding: 5px;
+}
+
+.moreinfo{
+   text-align: center;
+   padding: 20px 0px 20px 0px;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 22px;
+   color: white;
+   background-color: black;
+}
+
+
+
+#WIKIPEDIA{
+  max-width: 20%;
+  padding: 0px 10px 0px 10px;
+}
+
+#FACTSITE{
+  max-width: 25%;
+  padding: 0px 10px 0px 10px;
+}
+
+#GAMERANT{
+  max-width: 25%;
+  padding: 0px 10px 0px 10px;
+}
+
+#countdown{
+     font-family: 'Bebas Neue', cursive;
+
+  color:black;
+  text-align: center;
+  margin-top: 5px;
+font-size: 28px;
+}
+
+.menuee {
+  text-decoration: none;  /*removes default underline from links*/
+  display: block;
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 110%;
+}
+
+.homeslide{
+  width: 100%;
+  margin: auto;
+  padding: 18px 12px 0px 12px;
+  position: relative;
+}
+
+
+
+                                          /* COLUMNS*/
+* {
+  box-sizing: border-box;
+}
+
+audio{
+width: 100%;
+padding: 5px;
+
+}
+
+.column {
+  padding: 5px;
+  float: left;
+  width: 50%;
+
+}
+
+/* Clearfix (clear floats) */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#buy{
+  background-color: #E6E6E6;
+  padding: 10px 15px;
+  display: block;
+  color: black;
+
+}
+
+a{
+  text-decoration: none;
+}
+                                /* FILTER */
+.filterDiv {
+  float: left;
+  text-align: center;
+  margin: 4px;
+  display: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.stock {
+  margin-top: 18px;
+  overflow: hidden;
+
+}
+
+/* style of the filter buttons */
+.topbuttonz{
+  border: none;
+  outline: none;
+  padding: 16px 23px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+
+.topbuttonz.active {
+  background-color: #006FCD;
+  color: black;
+}
+
+#myBtnContain {
+  text-align: center;
+}
+
+
+
+.product {
+  max-width: 100%; /* 100% width is set to fill whole column */
+}
+
+h1{
+  font-size: 15px;
+}
+
+
+
+.cost{
+  font-size: 1.2rem;
+  margin: 8px;
+}
+
+/* style of BUY NOW button on the main page */
+.bigbutton {
+  text-align: center;
+
+  color: black;
+  background-color: #006FCD;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px 50px 20px 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  display: block;
+  border-radius: 5px;
+  margin: 0 20% 20px 20%;
+
+}
+
+#top3{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+   display: inline-block;
+   vertical-align: middle;
+   text-align: center;
+    width: 100%;
+     vertical-align: middle;
+
+}
+
+#warning{
+font-size: 10px;
+
+}
