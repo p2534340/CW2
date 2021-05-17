@@ -199,8 +199,6 @@ a{
   cursor: pointer;
 }
 
-
-
 .topbuttonz.active {
   background-color: #006FCD;
   color: black;
@@ -211,8 +209,6 @@ a{
   text-align: center;
 }
 
-
-
 .product {
   max-width: 100%; /
 }
@@ -220,8 +216,6 @@ a{
 h1{
   font-size: 15px;
 }
-
-
 
 .cost{
   font-size: 1.2rem;
@@ -256,7 +250,6 @@ h1{
    text-align: center;
     width: 100%;
      vertical-align: middle;
-
 }
 
 #warning{
