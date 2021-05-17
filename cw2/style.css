@@ -2,17 +2,16 @@ body {
   margin: 0;
   padding: 0;
   background-color:#fff;
-
+ /* white background to make everything stand out  */
   }
 
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
 }
-  
+  /* the footer was too close to the content  */
 
 #ps2Logo {
   max-height: 75px;
-
   }
 
 #paragraphs{
@@ -20,6 +19,7 @@ footer {
   font-size: 14px;
   padding:0px 10px 0px 10px;
 }
+/* this font looked the most professional out of all therefore it was chosen */
 
 
 
@@ -29,19 +29,19 @@ footer {
   float: right;
   display: block;
   }
+  /* this is the menu button on top right*/
 
 h4{
   font-family: sans-serif;
   color: black;
   text-align: center;
   font-size: 100%;
-
 }
 
 nav {
 
-    height: 100vh;      /*sets the height of the menu to be 100% of the viewports height */
-    position: fixed;    /* makes the menu stay in one position when scrolling */
+    height: 100vh;
+    position: fixed;
     background-color: black;
     z-index: 10;
     left: -100%;
@@ -49,7 +49,7 @@ nav {
     transition: left 0.2s;
     top: 0;
 }
-
+/* menu was made to stay in one possiton when scrolling trough */
 .cover{
     height: 120vh;
     z-index: 8;
@@ -60,7 +60,7 @@ nav {
     position: fixed;
     top: 0;
   }
-
+/* this is where the menu tab is, make sit hidden until clicked   */
 section {
   background-color: black;
 }
@@ -78,6 +78,7 @@ video{
   max-width: 100%;
   padding: 5px;
 }
+/* made to fit the whole screen so the viewer can see clearly on their device */
 
 .moreinfo{
    text-align: center;
@@ -87,6 +88,7 @@ video{
    color: white;
    background-color: black;
 }
+/* this font is very bold thereforte it was used to stand out in the footer */
 
 
 
@@ -96,43 +98,44 @@ video{
 }
 
 #FACTSITE{
-  max-width: 25%;
+  max-width: 35%;
   padding: 0px 10px 0px 10px;
 }
 
 #GAMERANT{
-  max-width: 25%;
+  max-width: 27%;
   padding: 0px 10px 0px 10px;
 }
-
+/* The links to other websites were sized differently to make them
+all look similar size */
 #countdown{
      font-family: 'Bebas Neue', cursive;
-
   color:black;
   text-align: center;
   margin-top: 5px;
 font-size: 28px;
 }
-
+/* count down timer made to sit in the middle */
 .menuee {
-  text-decoration: none;  /*removes default underline from links*/
+  text-decoration: none;
   display: block;
   padding: 20px;
   color: white;
   font-family: sans-serif;
   font-size: 110%;
 }
-
+/*adjusted to fit perfectly, got rid of the underline that comes with link */
 .homeslide{
   width: 100%;
   margin: auto;
-  padding: 18px 12px 0px 12px;
+  padding: 4px 12px 0px 12px;
   position: relative;
 }
+/* made to fit 100% but padded down so its not touching walls*/
 
 
 
-                                          /* COLUMNS*/
+
 * {
   box-sizing: border-box;
 }
@@ -147,10 +150,8 @@ padding: 5px;
   padding: 5px;
   float: left;
   width: 50%;
-
 }
-
-/* Clearfix (clear floats) */
+/* 50% to make sure two products can fit together*/
 .group::after {
   content: "";
   display: table;
@@ -162,13 +163,14 @@ padding: 5px;
   padding: 10px 15px;
   display: block;
   color: black;
-
 }
-
+/* the buttons colour was chosen to match the playstations theme
+ (playstation series are known for using blue)*/
 a{
   text-decoration: none;
 }
-                                /* FILTER */
+/* to get rid of the ugly underline */
+
 .filterDiv {
   float: left;
   text-align: center;
@@ -188,7 +190,7 @@ a{
 
 }
 
-/* style of the filter buttons */
+/* style of the buttons that filtered what items you choose to see */
 .topbuttonz{
   border: none;
   outline: none;
@@ -203,6 +205,7 @@ a{
   background-color: #006FCD;
   color: black;
 }
+/*same colour as the button in the home page */
 
 #myBtnContain {
   text-align: center;
@@ -211,9 +214,9 @@ a{
 
 
 .product {
-  max-width: 100%; /* 100% width is set to fill whole column */
+  max-width: 100%; /
 }
-
+/* made to fit within all of the collumn */
 h1{
   font-size: 15px;
 }
@@ -225,7 +228,7 @@ h1{
   margin: 8px;
 }
 
-/* style of BUY NOW button on the main page */
+/* the big button on the home page was made to be very visible */
 .bigbutton {
   text-align: center;
 
@@ -242,7 +245,7 @@ h1{
   margin: 0 20% 20px 20%;
 
 }
-
+/* customised the selection filter that lets you select what you want to see */
 #top3{
   margin-left: auto;
   margin-right: auto;
@@ -258,5 +261,5 @@ h1{
 
 #warning{
 font-size: 10px;
-
+padding: 5px;
 }
