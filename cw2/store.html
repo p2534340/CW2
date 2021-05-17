@@ -9,9 +9,9 @@
     <title>PlayStation2</title>
   </head>
   <body>
-    <header>                              <!-- MENU -->
+    <header>
       <section>
-        <nav id="menu" style="left: -100%;">      <!-- -100% to the left so its hidden-->
+        <nav id="menu" style="left: -100%;">
             <a class="menuee" href="home.html">HOME</a>
             <a class="menuee" href="store.html">STORE</a>
             <a class="menuee" href="playstation2.html">PlayStation2</a>
@@ -30,19 +30,26 @@
         </a>
     </section>
     </header>
+<!-- menu is the same as in home page -->
 
 
-
-  <div id="top3">                                 <!--FILTER-->
+  <div id="top3">      <!-- This let the user choose selection -->
   <button class="topbuttonz active" onclick="filterSelection('both')">SHOW ALL</button>
   <button class="topbuttonz" onclick="filterSelection('games')">GAMES</button>
   <button class="topbuttonz" onclick="filterSelection('consoles')">CONSOLES</button>
   </div>
 
+
+<div>
 <h4 id="warning">SOME OF THE PRODUCTS MIGHT BE OUT OF STOCK, THE STORE IS GOING TO BE UPDATED
   IN </h4>
     <p id="countdown"></p>
+</div>
+<!--some items could be bought out and be out of stock therefore this text was imported
+which is followd by the coundown until the shop gets updated -->
 
+
+<!-- this section contains all the products, their price, picture and link where to get them -->
   <div class="stock">
   <div class="group">
     <div class="column">
@@ -69,7 +76,7 @@
 
     </div>
   </div>
-  <div class="group">                                        
+  <div class="group">
     <div class="column">
 
         <div class="filterDiv games">
@@ -118,13 +125,13 @@
     </div>
 
   </div>
-  <div class="group">                                       <!-- 4TH ROW-->
+  <div class="group">
     <div class="column">
 
         <div class="filterDiv games">
-          <img class="product" src="images/shop/nfs.jpeg" alt="Need for Speed: Carbon">
+          <img class="product" src="images/shop/NFS.jpeg" alt="Need for Speed: Carbon">
           <h1>Need for Speed: Carbon</h1>
-          <p class="cost">£2.71</p>
+          <p class="cost">£2.70</p>
         <p> <a id="buy" target="blank" href=https://www.amazon.co.uk/Need-for-Speed-Carbon-PS2/dp/B000HG3JL4>
            PURCHASE</a></p>
         </div>
@@ -141,15 +148,73 @@
             >PURCHASE</a></p>
         </div>
 
-    </div>
-  </div>
 </div>
 
+        <!-- extra items added, from the survey feedback -->
+
+      </div>
+      <div class="group">
+        <div class="column">
+
+            <div class="filterDiv games">
+              <img class="product" src="images/shop/SIMP.jpg" alt="The Simpsons: Hit & Run">
+              <h1>The Simpsons: Hit & Run</h1>
+              <p class="cost">£15.75</p>
+            <p> <a id="buy" target="blank" href=https://www.amazon.co.uk/The-Simpsons-Hit-Run-PS2/dp/B00009LW7K
+               >PURCHASE</a></p>
+            </div>
+
+        </div>
+
+          <div class="column">
+
+            <div class="filterDiv games">
+              <img class="product" src="images/shop/SSX.jpg" alt="SSX Snowboard Supercross">
+              <h1>SSX Snowboard Supercross</h1>
+              <p class="cost">£18.74</p>
+              <p> <a id="buy" target="blank" href=https://www.amazon.co.uk/Electronic-Arts-SSX-Snowboard-Supercross/dp/B000050XTG/ref=sr_1_5?adgrpid=53944465195&dchild=1&gclid=EAIaIQobChMIiorn5tPQ8AIVkJntCh1hGgFSEAMYASAAEgKLTfD_BwE&hvadid=259005344586&hvdev=c&hvlocphy=1006867&hvnetw=g&hvqmt=e&hvrand=17474892473875240807&hvtargid=kwd-299642942639&hydadcr=8303_1819453&keywords=ssx+3+ps2&qid=1621252463&sr=8-5>
+                    PURCHASE</a></p>
+            </div>
+
+          </div>
+              </div>
+
+          <div class="group">
+            <div class="column">
+
+                <div class="filterDiv games">
+                  <img class="product" src="images/shop/DMC.jpeg" alt="Devil May Cry">
+                  <h1>Devil May Cry</h1>
+                  <p class="cost">£2.50</p>
+                <p> <a id="buy" target="blank" href=https://www.ebay.co.uk/itm/264960898185?chn=ps&norover=1&mkevt=1&mkrid=710-134428-41853-0&mkcid=2&itemid=264960898185&targetid=981234852680&device=c&mktype=pla&googleloc=1006867&poi=&campaignid=11211837113&mkgroupid=113021996634&rlsatarget=pla-981234852680&abcId=9300436&merchantid=119460283&gclid=EAIaIQobChMIxPOAvdTQ8AIVhu3tCh3SxQieEAQYBCABEgIXpvD_BwE>
+                   PURCHASE</a></p>
+                </div>
+
+            </div>
+            <div class="group">
+              <div class="column">
+
+                <div class="filterDiv games">
+                  <img class="product" src="images/shop/PRINCE.jpeg" alt="Prince of Persia Warrior Within">
+                  <h1>Prince of Persia Warrior Within</h1>
+                  <p class="cost">£18.08</p>
+                  <p> <a id="buy" target="blank" href=https://www.amazon.com/Prince-Persia-Warrior-Within-PlayStation-2/dp/B0002CHJ3M/ref=pd_lpo_63_img_0/132-1449475-9331002?_encoding=UTF8&pd_rd_i=B0002CHJ3M&pd_rd_r=4d5886ea-3562-4aba-8f59-0939698571c5&pd_rd_w=dbWaQ&pd_rd_wg=umDG1&pf_rd_p=a0d6e967-6561-454c-84f8-2ce2c92b79a6&pf_rd_r=SQRX1PXG6YY74PAMVSZQ&psc=1&refRID=SQRX1PXG6YY74PAMVSZQ
+                    >PURCHASE</a></p>
+                </div>
+                </div>
+                  </div>
+</div>
+  <!-- extra items added, from the survey feedback -->
+
+
+
+
+
 <footer>
-                                        <!--SOCIAL MEDIA BUTTONS-->
+         <!-- Links that provide more information about the console-->
   <div class="moreinfo">
     <p>LINKS WITH MORE INFORMATION</p>
-    <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">  <!-- makes the link open in new tab when -->
+    <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">
       <img id="WIKIPEDIA" src="images/WIKIPEDIA.jpg" alt="WIKIPEDIA LOGO">
     </a>
     <a href="https://www.thefactsite.com/sony-playstation-2-facts/" target="_blank">
@@ -159,12 +224,12 @@
       <img id="GAMERANT" src="images/GAMERANT.png" alt="GAMERANT LOGO">
     </a>
       <p id="pnumber">P2534340</p>
-  </div>
+  </div> <!-- my p number -->
 
 </footer>
 
 <script>
-                                                        //MENU
+     //the js for the menu so it slides in an out when clicked
   openMenu = () => {
   document.getElementById('menu').style.left = '0';
   document.getElementById('cover').style.left = '0';
@@ -178,8 +243,7 @@
   document.getElementById('menuButton').addEventListener('click', openMenu);
   document.getElementById('cover').addEventListener('click', closeMenu);
 
-
-                                                                  //FILTER
+// this js filtered what the user choses to see, 'all', 'games' or 'consoles'
   filterSelection("both")
   function filterSelection(c) {
     var x, i;
@@ -226,16 +290,16 @@
   // sets the date of the end of the countdown
   var countDownDate = new Date("AUGUST,2 2021 12:00:00").getTime();
 
-  // updates every second
+
   var x = setInterval(function() {
 
-  // gets today's date and time
+  // this here gets today's date and time
   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // the time between end of the count down and now
   var distance = countDownDate - now;
 
-  // calculations for days, hours, minutes and seconds
+  // these are calculations to get days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -246,11 +310,12 @@
 
   if (distance < 0) {
   clearInterval(x);
-  document.getElementById("countdown").innerHTML = "SHOP UPDATED!"; // information after the end (get rtid of ) of the countdown
+  document.getElementById("countdown").innerHTML = "SHOP UPDATED!";
+  // once the countdown ends it will say "shop updated" instead of countdown
   }
   }, 1000);
 
-  </script>
+</script>
   </body>
-
+  
 </html>

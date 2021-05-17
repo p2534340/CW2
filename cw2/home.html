@@ -10,9 +10,9 @@
     <title>PlayStation2</title>
   </head>
   <body>
-    <header>                              <!-- MENU -->
+    <header>                              <!-- The main menu -->
       <section>
-        <nav id="menu" style="left: -100%;">      <!-- -100% to the left so its hidden-->
+        <nav id="menu" style="left: -100%;">
             <a class="menuee" href="home.html">HOME</a>
             <a class="menuee" href="store.html">STORE</a>
             <a class="menuee" href="playstation2.html">PlayStation2</a>
@@ -29,9 +29,10 @@
         <a href="home.html">
           <img id="ps2Logo" src="images/PS2LOGO.jpeg" alt="ps2logo">
         </a>
+          <!--THE LOGO has been made to act as a button to go back to home page-->
     </section>
     </header>
-  <!--COUNTDOWN-->
+  <!--the count down until the website gets updated-->
     <div class="countdown">
       <h2>UNTIL THE SHOP GETS UPDATED</h2>
       <p id="countdown"></p>
@@ -58,7 +59,7 @@
     </div>
 
     <footer>
-
+             <!-- Links that provide more information about the console-->
       <div class="moreinfo">
         <p>LINKS WITH MORE INFORMATION</p>
         <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">
@@ -73,13 +74,13 @@
         </a>
 
           <p id="pnumber">P2534340</p>
-      </div>
+      </div> <!-- my p number -->
 
     </footer>
 
   <script>
 
-
+ //the js for the menu so it slides in an out when clicked
     openMenu = () => {
     document.getElementById('menu').style.left = '0';
     document.getElementById('cover').style.left = '0';
@@ -93,7 +94,7 @@
     document.getElementById('menuButton').addEventListener('click', openMenu);
     document.getElementById('cover').addEventListener('click', closeMenu);
 
-                                                      
+// This js makes three photos change every 5 seconds to make it look like slides
     var slideIndex = 0;
       showSlides();
 
@@ -106,22 +107,23 @@
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 5000);   //changes every 5 seconds
+    setTimeout(showSlides, 5000);
+     //this makes it changes every 5 seconds
     }
 
     // sets the date of the end of the countdown
     var countDownDate = new Date("AUGUST,2 2021 12:00:00").getTime();
 
-    // updates every second
+
     var x = setInterval(function() {
 
-    // gets today's date and time
+    // this here gets today's date and time
     var now = new Date().getTime();
 
-    // Find the distance between now and the count down date
+    // the time between end of the count down and now
     var distance = countDownDate - now;
 
-    // calculations for days, hours, minutes and seconds
+    // these are calculations to get days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -132,7 +134,8 @@
 
     if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "SHOP UPDATED!"; // information after the end (get rtid of ) of the countdown
+    document.getElementById("countdown").innerHTML = "SHOP UPDATED!";
+    // once the countdown ends it will say "shop updated" instead of countdown
     }
     }, 1000);
 

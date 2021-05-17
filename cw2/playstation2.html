@@ -8,7 +8,7 @@
     <title>PlayStation2</title>
   </head>
   <body>
-    <header>                         
+    <header>
       <section>
         <nav id="menu" style="left: -100%;">
             <a class="menuee" href="home.html">HOME</a>
@@ -29,14 +29,14 @@
         </a>
     </section>
     </header>
-
+ <!-- menu is the same as in home page -->
     <h2>
   PlayStation 2
     </h2>
 
     <h4>
     (4 march, 2000)
-    </h4>
+  </h4>  <!-- released date -->
 
   <div id="paragraphs">
       <p>
@@ -45,7 +45,7 @@
     Grand Theft Auto: San Andreas or Tekken 5 shaped the games that we all have
     right now. We all owe a big one to Sony Computer Entertainment for creating this
     awsome console and shaping our childhoods.
-     </p>
+  </p><!--some info about the console  -->
   </div>
 
      <h4>
@@ -58,6 +58,7 @@
   <source src="videos/PS2VIDEO.mp4" type="video/mp4">
   <source src="videos/PS2VIDEO.ogg" type="video/ogg">
       </video>
+      <!-- video from youtube about the ps2-->
 
 
   <div id="paragraphs">
@@ -66,7 +67,7 @@
     kind that you will remember for the rest of your life. Go ahead and click
     play on the audio file for some nostalgia!
      </p>
- </div>
+ </div><!-- more info-->
 
   <h4>
    (PlayStation 2 start up sound)
@@ -77,12 +78,12 @@
    <source src="audio/PS2START.mp3" type="audio/mp3">
    <source src="audio/PS2START.ogg" type="audio/ogg">
  </audio>
-
+<!--just the sound of ps2 turning on, which would give nostalgia to many users -->
  <footer>
-                                         <!--SOCIAL MEDIA BUTTONS-->
+                 <!-- Links that provide more information about the console-->
    <div class="moreinfo">
      <p>LINKS WITH MORE INFORMATION</p>
-     <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">  <!-- makes the link open in new tab when -->
+     <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">
        <img id="WIKIPEDIA" src="images/WIKIPEDIA.jpg" alt="WIKIPEDIA LOGO">
      </a>
      <a href="https://www.thefactsite.com/sony-playstation-2-facts/" target="_blank">
@@ -92,13 +93,13 @@
        <img id="GAMERANT" src="images/GAMERANT.png" alt="GAMERANT LOGO">
      </a>
        <p id=" pnumber"> P2534340</p>
-   </div>
+   </div> <!-- my p number -->
 
  </footer>
     </body>
     <script>
 
-                                                        //MENU
+                //the js for the menu so it slides in an out when clicked
       openMenu = () => {
       document.getElementById('menu').style.left = '0';
       document.getElementById('cover').style.left = '0';
@@ -112,3 +113,5 @@
       document.getElementById('menuButton').addEventListener('click', openMenu);
       document.getElementById('cover').addEventListener('click', closeMenu);
 </script>
+
+</html>
