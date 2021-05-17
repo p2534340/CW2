@@ -210,7 +210,7 @@ a{
 }
 
 .product {
-  max-width: 100%; /
+  max-width: 100%;
 }
 /* made to fit within all of the collumn */
 h1{
@@ -225,7 +225,6 @@ h1{
 /* the big button on the home page was made to be very visible */
 .bigbutton {
   text-align: center;
-
   color: black;
   background-color: #006FCD;
   font-size: 20px;
